@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    line-height: 1.7;
+}
+
+.lore{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+
+}
+
+.descrizione{
+    display: grid;
+    justify-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    gap: 30px;
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: rgb(105, 123, 168);
+    box-shadow: 0px 10px 25px black;
+    border-radius: 15px;
+    padding: 40px;
+}
+.descrizione2{
+    display: grid;
+    justify-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    gap: 30px;
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: rgb(105, 123, 168);
+    box-shadow: 0px 10px 25px black;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.introduzione{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.2rem;
+    font-weight: bold; 
+    margin-bottom: 5px;
+}
+
+h3.introduzione{
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(129, 17, 17);
+    text-shadow: 1px 1px 1px black;
+}
+
+.introduce{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2rem;
+    margin-bottom:1.5px;
+    color: rgb(129, 17, 17);
+}
+
+
+.diviso{
+    color: black;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+
+
+.ep{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 15px;
+    text-shadow: 2px 2px 2px black;
+    padding: 0;
+}
+
+.ep li{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.link3{
+    color: black;
+    text-decoration: underline;
+    text-shadow: none;
+}
+
+.popup-trigger{
+    cursor: pointer;
+    color: #222;
+    text-decoration: underline;
+}
+
+/*popup*/
+.popupp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+}
+
+#closePopupp {
+  cursor: pointer;
+  float: right;
+}
+
+.popupp{
+    display: none;
+}
+
+.popupp.active{
+    display: flex;
+}
+
+
+/*media query*/
+@media (min-width:768px){
+    
+    .descrizione{
+        width: 80%;
+    }
+
+    .introduce{
+        font-size: 2.8rem;
+        
+    }
+
+    h3.introduzione{
+        font-size: 2rem;
+    }
+
+    .introduzione{
+        font-size: 1.1rem;
+    }
+
+    .ep li{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width:1024px){
+    
+    .descrizione{
+        width: 70%;
+        max-width: 1000px;
+    }
+
+    .introduce{
+        font-size: 3.5rem;
+        
+    }
+
+    h3.introduzione{
+        font-size: 2.3rem;
+    }
+
+    .introduzione{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width:1440px){
+    
+    .descrizione{
+        max-width: 1200px;
+    }
+
+    .introduce{
+        font-size: 4rem;
+        
+    }
+
+    h3.introduzione{
+        font-size: 2.8rem;
+    }
+
+    .introduzione{
+        font-size: 1.3rem;
+    }
+
+}
