@@ -1,0 +1,84 @@
+.popup{
+    display: none;/*nascosta all'inizio*/
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgb(108, 124, 167);
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 90%;
+    max-width: 300px;
+
+    box-shadow: 0px 10px 25px black;
+
+    z-index: 1000;
+}
+
+/*tasto per attivare il popup*/
+.popup.active{
+    display: block;
+}
+
+/*tasto per chiudere il popup*/
+.close{
+    float: right;
+}
+
+
+/*nome intestativo del membro popup*/
+.nome{
+    display: flex;
+    justify-content:center;
+    font-family:'Quicksand', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/*nome informazione del popup*/
+.info{
+    display: flex;
+    justify-content:left;
+    font-family:'Quicksand', sans-serif;
+    font-weight: bold;
+    color: rgb(33, 43, 59);
+}
+
+/*domande nel popup*/
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Quicksand', sans-serif;
+    font-weight: bold;
+    color: black;
+    gap: 10px;
+}
+/*per togliere il puntato*/
+ul{
+    list-style: none;
+    text-align:start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/*risposte nel popup*/
+.answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Quicksand', sans-serif;
+    font-weight: bold;
+    color: rgb(28, 40, 60);
+}
+
+.close{
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    background-color: black;
+}
